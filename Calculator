@@ -1,0 +1,17 @@
+no1=input("Enter First no: ")
+no2=input("Enter Second no: ")
+sym=input("'+' for Addition\n'-' for subtraction\n'/' for Division\n'*' for Multiplication\nYou have chosen: ")
+if(sym == "+"):
+    s=int(no1)+int(no2)
+    print("Your Answer is: "+str(s))
+elif(sym == "-"):
+    s=int(no1)-int(no2)
+    print("Your Answer is: "+str(s))    
+elif(sym == "*"):
+    s=int(no1)*int(no2)
+    print("Your Answer is: "+str(s))
+elif(sym == "/"):
+    s=int(no1)/int(no2)
+    print("Your Answer is: "+str(s))
+else:
+    print("Invalid Function used!!")    
