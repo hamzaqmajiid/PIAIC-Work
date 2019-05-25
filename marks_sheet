@@ -1,0 +1,38 @@
+math=input("Math Marks: ")
+english=input("English Marks: ")
+urdu=input("Urdu Marks: ")
+islamiat=input("Islamiat Marks: ")
+science=input("Science Marks: ")
+per=str((((int(science)+int(islamiat)+int(urdu)+int(english)+int(math))/500)*100))
+
+if(float(per)>=80.0 and float(per)<100):
+    gra= "A"
+
+elif(float(per)>=70 and float(per)<80):
+    gra = "B"
+
+elif(float(per)>=60 and float(per)<70):
+    gra ="C"
+
+elif(float(per)>=50 and float(per)<60):
+    gra = "D"
+
+elif(float(per)>=0 and float(per)<50):
+    gra = "F"
+
+else:
+    gra = print("Invalid Information")
+
+print("|___________MARKS SHEET__________|")
+print("|                                |")
+print("|    Subject      |      MARKS   |")
+print("|=================|==============|")
+print("|                 |              |")
+print("|*   Islamiat     |      "+islamiat+"      |")
+print("|*     Urdu       |      "+urdu+"      |")
+print("|*     Maths      |      "+math+"      |")
+print("|*    English     |      "+english+"      |")
+print("|*    Science     |      "+science+"      |")
+print("|________________________________|")
+print("|            | Percentage | "+per+"%|")
+print("|            |    Grade   | "+gra+"    |")
